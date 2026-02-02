@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Quiz Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="root">
+        <div id="registration-screen">
+            <h1>Candidate Registration Portal</h1>
+            <div class="forms-wrapper">
+                <div class="cand-card">
+                    <div class="card-header">Candidate 1</div>
+                    <form class="quiz-form">
+                        <input type="text" name="UserName" placeholder="Full Name" required>
+                        <input type="number" name="UserAge" placeholder="Age" required>
+                        <select name="UserGender" required>
+                            <option value="" disabled selected>Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        <input type="date" name="UserDate" required>
+                        <button type="submit" class="submit-btn">Register</button>
+                    </form>
+                </div>
+                <div class="cand-card">
+                    <div class="card-header">Candidate 2</div>
+                    <form class="quiz-form">
+                        <input type="text" name="UserName" placeholder="Full Name" required>
+                        <input type="number" name="UserAge" placeholder="Age" required>
+                        <select name="UserGender" required>
+                            <option value="" disabled selected>Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        <input type="date" name="UserDate" required>
+                        <button type="submit" class="submit-btn">Register</button>
+                    </form>
+                </div>
+                <div class="cand-card">
+                    <div class="card-header">Candidate 3</div>
+                    <form class="quiz-form">
+                        <input type="text" name="UserName" placeholder="Full Name" required>
+                        <input type="number" name="UserAge" placeholder="Age" required>
+                        <select name="UserGender" required>
+                            <option value="" disabled selected>Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        <input type="date" name="UserDate" required>
+                        <button type="submit" class="submit-btn">Register</button>
+                    </form>
+                </div>
+                <div class="cand-card">
+                    <div class="card-header">Candidate 4</div>
+                    <form class="quiz-form">
+                        <input type="text" name="UserName" placeholder="Full Name" required>
+                        <input type="number" name="UserAge" placeholder="Age" required>
+                        <select name="UserGender" required>
+                            <option value="" disabled selected>Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        <input type="date" name="UserDate" required>
+                        <button type="submit" class="submit-btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="review-screen" style="display:none;">
+            <h1>Confirm Participants</h1>
+            <div id="review-container" class="forms-wrapper"></div>
+            <button id="start-quiz-btn" class="main-action-btn">Start Quiz Now</button>
+        </div>
+
+        <div id="quiz-screen" style="display:none;">
+            <div class="question-area">
+                <h2 id="current-player-name">Player Name</h2>
+                <div id="timer-bar"><div id="timer-progress"></div></div>
+                
+                <div class="question-box">
+                    <h3 id="q-text">Question text goes here?</h3>
+                    <div id="options-container"></div>
+                </div>
+
+                <div class="quiz-controls">
+                    <button id="back-btn" class="ctrl-btn">← Back</button>
+                    <button id="skip-btn" class="ctrl-btn">Skip</button>
+                    <button id="submit-ans-btn" class="ctrl-btn primary">Submit Answer</button>
+                </div>
+            </div>
+
+            <div class="status-sidebar">
+                <h3>Question Status</h3>
+                <div id="circles-container"></div>
+                <div class="legend">
+                    <small><span class="dot green"></span> Correct</small>
+                    <small><span class="dot red"></span> Wrong</small>
+                    <small><span class="dot black"></span> Skipped</small>
+                </div>
+            </div>
+        </div>
+
+        <div id="result-screen" style="display:none;">
+            <h1>🏆 Final Rankings</h1>
+            <div id="winner-card"></div>
+            <div id="score-graph"></div>
+            <button id="restart-btn" onclick="location.reload()" class="main-action-btn">Restart Portal</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
