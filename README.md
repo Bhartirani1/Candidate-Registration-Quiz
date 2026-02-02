@@ -1,34 +1,44 @@
-🏆 Quiz Portal
-Char (4) candidates ke liye ek smart quiz system jo real-time mein ranking aur results dikhata hai.
+🏆 QuizEngine: Multi-Candidate Assessment Portal
+A professional web-based quiz application designed for real-time candidate evaluation. It features a dynamic question-pooling system ensuring zero redundancy across multiple users.
 
-🌟 Khaas Baat (Features)
-Unique Questions: Har candidate ko alag (random) questions milenge.
+🚀 Key Features
+Smart Pooling: Serves 10 random, non-repeating questions from a 100-question master array.
 
-No Repeats: Jo sawal Candidate 1 ko mil gaya, wo baaki 3 ko nahi dikhega.
+Conflict Prevention: Once a question is served to Candidate 1, it is automatically excluded for Candidates 2, 3, and 4.
 
-Timer: Har sawal ke liye 10 seconds ka time.
+Time Management: Integrated 10-second countdown per question with a smooth CSS progress bar.
 
-Final Result: Last mein automatic winner card aur bar-graph leaderboard.
+Visual Feedback: Real-time tracking circles (Correct/Wrong/Skipped) for active sessions.
 
-🛠️ Kaise Chalayein
-Saari files (index.html, style.css, script.js) ko ek folder mein rakhen.
+Automated Analytics: Generates a winner card and a comparative bar graph leaderboard upon completion.
 
-index.html ko kisi bhi browser mein open karein.
+🛠️ Technical Stack
+Logic: Vanilla JavaScript (ES6)
 
-Charo candidates ka data bharein aur quiz shuru karein.
+Structure: HTML5 & CSS3 (Fully Responsive)
 
-📂 Files Ka Structure
-index.html - Quiz ka poora structure.
+Data Management: JavaScript Set and Array filtering for unique question distribution.
 
-script.js - Random question logic aur timer code.
+📂 Project Structure
+index.html: The core structure and UI screens.
 
-masterPool - Isme 100 questions ka collection hai.
+script.js: Contains the Quiz Engine, Timer logic, and Result generator.
 
-🚀 Flow
-Registration: 4 log register karte hain.
+masterPool: A curated array of 100 questions covering DSA, Blockchain, and MERN stack.
 
-Quiz: Har banda 10 random sawal solve karta hai.
+📖 How to Use
+Clone/Download the repository to your local machine.
 
-Ranking: Last mein winner aur sabke scores bar-graph mein dikhte hain.
+Open index.html in any modern web browser.
 
-Made by Bharti Rani
+Register 4 Candidates through the entry forms.
+
+Complete the quiz for all candidates to unlock the Final Rankings.
+
+🔐 Copyright
+© 2024 Bharti Rani. All Rights Reserved.
+
+This software and its source code are the property of Bharti Rani. No part of this project may be reproduced, distributed, or transmitted in any form without the prior written permission of the author.
+
+👤 Author
+Bharti Rani
